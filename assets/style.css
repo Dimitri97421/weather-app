@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/misurina-sunset.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.search{
+    display: flex;
+    gap: 30px;
+    top: 65px;
+    position: absolute;
+}
+
+.search input{
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    width: 220px;
+}
+
+.search button{
+    border-radius: 90px;
+    border: 0;
+    width: 35px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    font-weight: 700;
+    margin-top: 100px;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 550px;
+}
+
+.today_weather{
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.next_days{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 120px;
+}
