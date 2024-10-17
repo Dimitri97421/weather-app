@@ -9,7 +9,7 @@ body {
 }
 
 main{
-    display: flex;
+    display: none;
     width: 80%;
     height: 90vh;
     flex-direction: column;
@@ -56,6 +56,18 @@ main{
     overflow-y: auto;
     width: 100%;
     max-width: 550px;
+    animation: fadeInFromCenter 0.75s ease-out;
+}
+
+@keyframes fadeInFromCenter {
+    0% {
+        transform: scale(0); /* Réduit à 0 pour commencer du centre */
+        opacity: 0; /* Invisible au départ */
+    }
+    100% {
+        transform: scale(1); /* Taille normale */
+        opacity: 1; /* Complètement visible */
+    }
 }
 
 .today_weather{
