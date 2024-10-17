@@ -57,7 +57,7 @@ async function getWeather(): Promise<void> {
         }
         const data = await response.json();
 
-        // Température moyenne et code météo des 5 prochains jours
+        // Température moyenne et code météo
         const meanTemps = data.daily.temperature_2m_mean;
         const weatherCodes = data.daily.weathercode; // Codes météo pour l'état du ciel
         const timezone = data.timezone;
@@ -92,7 +92,7 @@ async function getWeather(): Promise<void> {
             </div>
         `;
 
-        // Affichage des prévisions pour les 4 prochains jours
+        // Affichage des prévisions pour les 3 prochains jours
         weatherHtml += `<div class="next_days">`;
 
         for (let i = 1; i < 4; i++) {

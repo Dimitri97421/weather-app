@@ -61,12 +61,12 @@ main{
 
 @keyframes fadeInFromCenter {
     0% {
-        transform: scale(0); /* Réduit à 0 pour commencer du centre */
-        opacity: 0; /* Invisible au départ */
+        transform: scale(0);
+        opacity: 0;
     }
     100% {
-        transform: scale(1); /* Taille normale */
-        opacity: 1; /* Complètement visible */
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
